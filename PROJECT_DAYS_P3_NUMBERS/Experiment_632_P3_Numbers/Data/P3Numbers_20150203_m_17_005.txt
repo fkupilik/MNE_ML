@@ -1,0 +1,11 @@
+sex: male
+age: 17 years
+the number thought: 5
+the first guessed: 5
+the second guessed: -
+the third guessed: -
+handedness: right
+other: -
+
+
+ 

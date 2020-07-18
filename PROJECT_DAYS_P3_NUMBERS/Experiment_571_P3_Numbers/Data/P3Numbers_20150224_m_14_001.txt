@@ -1,0 +1,9 @@
+sex: male
+age: 14 years
+the number thought: 3
+the first guessed: 1
+the second guessed: 5
+the third guessed: 3
+handedness: left
+other: weak response over 550 ms
+

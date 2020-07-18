@@ -1,0 +1,9 @@
+sex: male
+age: 11 years
+the number thought: 4
+the first guessed: 4
+the second guessed: -
+the third guessed: -
+handedness: right
+other: blinks excessively at the start (used to wear glasses); latency 400 ms
+

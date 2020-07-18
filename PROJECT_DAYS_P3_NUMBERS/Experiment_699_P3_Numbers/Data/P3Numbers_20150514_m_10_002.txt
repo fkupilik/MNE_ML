@@ -1,0 +1,8 @@
+sex: male
+age: 10 years
+the number thought: 2
+the first guessed: 4
+the second guessed: 5
+the third guessed: -
+handedness: both
+other: -

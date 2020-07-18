@@ -1,0 +1,8 @@
+sex: male
+age: 8 years
+the number thought: 2
+the first guessed: 2
+the second guessed: 
+the third guessed: 
+handedness: right
+other: not significant component

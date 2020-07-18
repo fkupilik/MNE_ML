@@ -1,0 +1,8 @@
+sex: female
+age: 14 years
+the number thought: 5
+the first guessed: 9
+the second guessed: 5
+the third guessed: -
+handedness: right
+other: strogner on 9 , weaker on 5

@@ -1,0 +1,8 @@
+sex: male
+age: 17 years
+the number thought: 6
+the first guessed: 9
+the second guessed: 1
+the third guessed: -
+handedness: right
+other: - blinks excessively; 1, 3, 9 - similar responses; 6 - looks differently

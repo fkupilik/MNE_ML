@@ -1,0 +1,8 @@
+sex: female
+age: 11 years
+the number thought: 2
+the first guessed: 2
+the second guessed: -
+the third guessed: -
+handedness: left
+other: latency 350 - 400 ms; 8, 9 - suspected numbers - waveforms with latencies over 600 ms 

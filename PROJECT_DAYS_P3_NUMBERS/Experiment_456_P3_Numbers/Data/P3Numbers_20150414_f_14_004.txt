@@ -1,0 +1,10 @@
+sex: female
+age: 14 years
+the number thought: 5
+the first guessed: 1
+the second guessed: 5
+the third guessed: -
+handedness: right
+other: -
+
+

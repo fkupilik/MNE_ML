@@ -1,0 +1,8 @@
+sex: male
+age: 15 years
+the number thought: 5
+the first guessed: 6
+the second guessed: 2
+the third guessed: -
+handedness: left
+other: blinks excessively; myopia; no glasses

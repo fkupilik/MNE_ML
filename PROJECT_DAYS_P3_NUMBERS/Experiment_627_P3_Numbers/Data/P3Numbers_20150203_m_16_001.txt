@@ -1,0 +1,12 @@
+sex: male
+age: 16 years
+the number thought: 3
+the first guessed: 7
+the second guessed: 3
+the third guessed: -
+handedness: right
+other: blinks excessively; 3 looks good at the very beginning, but is spoilt by eye-blinking
+
+
+
+ 

@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="odmlTerms.xsl"?>
+<?xml-stylesheet type="text/xsl" href="odml.xsl"?>
+<odML xmlns:gui="http://www.g-node.org/guiml" version="1">
+  <version>1</version>
+  <date>2015-07-16</date>
+  <section>
+    <type>new</type>
+    <name>Experiment</name>
+    <property>
+      <name>start-time</name>
+      <gui:required>true</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        24.11.2014, 08:46:00
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>end-time</name>
+      <gui:required>true</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>1</gui:order>
+      <value>
+        24.11.2014, 08:56:00
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>research-group</name>
+      <gui:required>true</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>2</gui:order>
+      <value>
+        BRUVAR
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>scenario-title</name>
+      <gui:required>true</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>3</gui:order>
+      <value>
+        P3 Numbers
+        <type>string</type>
+      </value>
+    </property>
+    <section>
+      <type>new</type>
+      <name>Experimenters</name>
+      <property>
+        <name>Experimenter #1</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          Ing. Roman Mouček, Ph.D.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Experimenter #2</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          Ing. Lukaš Vařeka
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Subject</name>
+    <property>
+      <name>Gender</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        female
+        <type>string</type>
+      </value>
+      <value>
+        male
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Age</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>1</gui:order>
+      <value>
+        17
+        <type>string</type>
+      </value>
+    </property>
+  </section>
+  <section>
+    <type>new</type>
+    <name>EEG Cap</name>
+    <property>
+      <name>Type</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        Medium, 54 - 58 cm (red)
+        <type>string</type>
+      </value>
+      <value>
+        Large, 58 - 62 cm (dark blue)
+        <type>string</type>
+      </value>
+      <value>
+        Small, 50 - 54 cm (yellow)
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Description</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>1</gui:order>
+      <value>
+        EEG cap captures the signal of neuronal activity in the brain from the head surface using electrode application technique.
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Inventory number</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>2</gui:order>
+      <value>
+        17196
+        <type>string</type>
+      </value>
+      <value>
+        21050
+        <type>string</type>
+      </value>
+      <value>
+        16884
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Owner</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>3</gui:order>
+      <value>
+        Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Hardware manufacturer</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>4</gui:order>
+      <value>
+        Electro-Cap International, Inc. Eaton, Ohio 45320 USA
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Reference</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>5</gui:order>
+      <value>
+        http://www.walter-graphtek.cz/index.php/eegaccessories/ccessorieseeg/eciacceeg/item/e1-l?category_id=41 http://www.electro-cap.com
+        <type>string</type>
+      </value>
+    </property>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Electrodes</name>
+    <section>
+      <type>new</type>
+      <name>Eye Blink Detection Electrode</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          E21-9S DISK ELECTRODE
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          A pure tin cup electrode with a 48" (122 cm) lead wire and a female socket. Device is used as a reference electrode.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Owner</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Type</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>3</gui:order>
+        <value>
+          Standard 9mm cup
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Hardware manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>4</gui:order>
+        <value>
+          Electro-Cap International, Inc. Eaton, Ohio 45320 USA
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Reference</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>5</gui:order>
+        <value>
+          http://www.electro-cap.com/index.cfm/supplies/
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+    <section>
+      <type>new</type>
+      <name>Reference Electrode</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          E21-9S DISK ELECTRODE
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          A pure tin cup electrode with a 48" (122 cm) lead wire and a female socket. Device is used as a reference electrode.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Owner</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Type</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>3</gui:order>
+        <value>
+          Standard 9mm cup
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Hardware manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>4</gui:order>
+        <value>
+          Electro-Cap International, Inc. Eaton, Ohio 45320 USA
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Reference</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>5</gui:order>
+        <value>
+          http://www.electro-cap.com/index.cfm/supplies/
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+    <section>
+      <type>new</type>
+      <name>Ground Electrode</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          E5-9S EAR ELECTRODE
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          A pair of pure tin cup electrodes with a 48" (122 cm) lead wire and a female socket. A spring-clip back, covered with plastic for patient comfort, is used to hold the electrode in place. Device is used as a ground electrode.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Owner</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Type</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>3</gui:order>
+        <value>
+          Standard 9mm cup
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Hardware manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>4</gui:order>
+        <value>
+          Electro-Cap International, Inc. Eaton, Ohio 45320 USA
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Reference</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>5</gui:order>
+        <value>
+          http://www.electro-cap.com/index.cfm/supplies/
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Amplifier</name>
+    <property>
+      <name>Model name</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        V-Amp 16
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Type</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>1</gui:order>
+      <value>
+        digital DC amplifier input 5V DC, 450mA
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Description</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>2</gui:order>
+      <value>
+        The V-Amp is used for recording EEG signal and the full range of evoked potentials. Amplifier has two auxiliary ports for measuring peripheral signals like GSR, blood flow, body temperature.
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Manufacturer</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>3</gui:order>
+      <value>
+        Brain Products
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Serial number</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>4</gui:order>
+      <value>
+        AMP 10021151 VA16
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Owner</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>5</gui:order>
+      <value>
+        Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Inventory number</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>6</gui:order>
+      <value>
+        501421
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Number of channels</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>7</gui:order>
+      <value>
+        18
+        <type>string</type>
+      </value>
+    </property>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Accessories</name>
+    <section>
+      <type>new</type>
+      <name>Electro Gel</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          ELECTRO-GEL NET:16
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          This electro-gel is an off white color, water-miscible conductive gel. Electro-gel is a mixture of the following components: Water, Sodium Chloride, Aragum, Glycerin, Pottasium Bitartrate, Methylparaben and Propylparaben. Electro gel is applied by inserting the gel into the EEG cap electrodes by using a syringe and blunted needle. Electro gel is used for setting low electrode impedance and limitations of electrode artifacts.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          ELECTRO-Cap International, Inc. 1011 W. Lexington Road Eaton, Ohio 45320 U.S.A.
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+    <section>
+      <type>new</type>
+      <name>Conductive Paste</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          Ten 20 CONDUCTIVE EEG Paste
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          Ten20 is a conductive and adhesive paste specifically formulated for use with reusable (non-disposable) electrodes. Primarily used for EEG electrodes. (http://www.biopac.com/ten20-conductivegel)
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          Weaver and Company 565 Nucla Way Unit B Aurora, CO 80011 Toll Free 800-525-2130 Fax 303-367-5118
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+    <section>
+      <type>new</type>
+      <name>Degreasing Gel</name>
+      <property>
+        <name>Title</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>0</gui:order>
+        <value>
+          Nuprep
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Description</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>1</gui:order>
+        <value>
+          Nuprep gel is applied to electrode site on scalp with cotton swab. EEG electrode paste and reference or ground electrode is applied over Nuprep gel.
+          <type>string</type>
+        </value>
+      </property>
+      <property>
+        <name>Manufacturer</name>
+        <gui:required>false</gui:required>
+        <gui:editable>true</gui:editable>
+        <gui:order>2</gui:order>
+        <value>
+          Weaver and Company 565 Nucla Way Unit B Aurora, CO 80011 Toll Free 800-525-2130 Fax 303-367-5118
+          <type>string</type>
+        </value>
+      </property>
+    </section>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Software</name>
+    <property>
+      <name>Title</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        BrainVision Recorder 1.2
+        <type>string</type>
+      </value>
+    </property>
+    <property>
+      <name>Description</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>1</gui:order>
+      <value>
+        EEG/ERP recording software
+        <type>string</type>
+      </value>
+    </property>
+  </section>
+  <section>
+    <type>new</type>
+    <name>Digitization</name>
+    <property>
+      <name>Sampling rate</name>
+      <gui:required>false</gui:required>
+      <gui:editable>true</gui:editable>
+      <gui:order>0</gui:order>
+      <value>
+        1000 Hz
+        <type>string</type>
+      </value>
+    </property>
+  </section>
+</odML>
+

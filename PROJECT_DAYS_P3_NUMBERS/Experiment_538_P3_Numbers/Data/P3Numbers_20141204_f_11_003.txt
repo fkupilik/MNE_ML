@@ -1,0 +1,8 @@
+sex: female
+age: 11 years
+the number thought: 1
+the first guessed: 1
+the second guessed: -
+the third guessed: -
+handedness: right
+other: lot of eye blinking; significant component, can be guessed after three trials

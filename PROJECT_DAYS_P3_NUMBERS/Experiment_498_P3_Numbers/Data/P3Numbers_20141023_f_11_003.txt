@@ -1,0 +1,8 @@
+sex: female
+age: 11 years
+the number thought: 4
+the first guessed: 9
+the second guessed: 4
+the third guessed: -
+handedness: right
+other: 4 takes more time to form
