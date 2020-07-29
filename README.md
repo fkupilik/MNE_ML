@@ -11,4 +11,10 @@ Used preprocessing methods:
 - artifact removal with the peak-to-peak amplitude rejection
 - windowed means feature extraction
 
+Used classifiers:
+- Convolutional neural network
+- LSTM neural network
+- Linear discriminant analysis
+- Support vector machines
+
 Detailed description of the whole experiment with an explanation of the code is located in the Wiki.
