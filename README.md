@@ -4,14 +4,14 @@ This is the example of the experiment using preprocessing methods from the `MNE`
 
 The used dataset in the `BrainVision` format, which is located in the _PROJECT_DAYS_P3_NUMBERS_ folder, is described in the https://www.nature.com/articles/sdata2016121
 
-Used preprocessing methods:
+## Used preprocessing methods:
 - low-pass and high-pass filtering
 - epoch extraction
 - baseline correction
 - artifact removal with the peak-to-peak amplitude rejection
 - windowed means feature extraction
 
-Used classifiers:
+## Used classifiers:
 - Convolutional neural network
 - LSTM neural network
 - Linear discriminant analysis
