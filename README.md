@@ -17,4 +17,4 @@ The used dataset in the `BrainVision` format, which is located in the _PROJECT_D
 - Linear discriminant analysis
 - Support vector machines
 
-Detailed description of the whole experiment with an explanation of the code is located in the Wiki.
+Detailed description of the whole experiment with an explanation of the code is located in the [Wiki](https://github.com/fkupilik/MNE_ML/wiki).
