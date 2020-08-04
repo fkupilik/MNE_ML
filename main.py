@@ -1,5 +1,7 @@
 from sklearn.svm import SVC
 
+import sys
+
 import data_loading
 import linear
 import cnn
@@ -34,16 +36,32 @@ def windowed_means(out_features, param):
     out = preprocessing.scale(np.array(output_features), axis=1)
     return out
 
-#choose classifier
-type = 'cnn' # choose from 'svm', 'lda', 'cnn', 'rnn'
+
+def print_help():
+    print("Usage: python main.py <classifier>\n")
+    print("You can choose from these classifiers: lda, svm, cnn, rnn\n")
+
+
+if len(sys.argv) != 2:
+    print("The wrong number of command line arguments!\n")
+    print_help()
+    exit(1)
+
+classifier = sys.argv[1]
+
+if classifier != 'cnn' and classifier != 'rnn' and classifier != 'lda' and classifier != 'svm':
+    print("The wrong choice of classifier!\n")
+    print_help()
+    exit(1)
+  # choose from 'svm', 'lda', 'cnn', 'rnn'
 
 param = Param()
 
 X, Y = data_loading.read_data(param)
 
-if type == 'cnn':
+if classifier == 'cnn':
     X = np.expand_dims(X, 3)
-elif type == 'lda' or type == 'svm':
+elif classifier == 'lda' or classifier == 'svm':
     X = windowed_means(X, param)
 
 x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=param.test_part,
@@ -57,11 +75,11 @@ test_results = []
 
 for train, validation in shuffle_split.split(x_train):
 
-    if type == 'cnn':
+    if classifier == 'cnn':
         model = cnn.CNN(x_train.shape[1], x_train.shape[2], param)
-    elif type == 'rnn':
+    elif classifier == 'rnn':
         model = rnn.RNN(x_train.shape[1], x_train.shape[2], param)
-    elif type == 'lda':
+    elif classifier == 'lda':
         model = linear.LinearClassifier(LinearDiscriminantAnalysis(solver='eigen', shrinkage='auto'))
     else:
         model = linear.LinearClassifier(SVC(cache_size=500))
@@ -72,7 +90,7 @@ for train, validation in shuffle_split.split(x_train):
     test_metrics = model.evaluate(x_test, y_test)
     test_results.append(test_metrics)
 
-print("\nClassifier: ", type)
+print("\nClassifier: ", classifier)
 
 avg_val_results = np.round(np.mean(val_results, axis=0) * 100, 2)
 avg_val_results_std = np.round(np.std(val_results, axis=0) * 100, 2)

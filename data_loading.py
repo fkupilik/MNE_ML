@@ -16,6 +16,8 @@ def read_data(param):
         for folder_name in dirs:
             path_file_vhdr = param.path + folder_name + '/Data/*.vhdr'
             file_name_vhdr = glob(path_file_vhdr)
+            if len(file_name_vhdr) == 0:
+                continue
             raw = mne.io.read_raw_brainvision(file_name_vhdr[0], preload=True)
             raw.filter(l_freq=param.l_freq, h_freq=param.h_freq)
             if (raw.info['nchan'] == 4):
@@ -23,6 +25,8 @@ def read_data(param):
 
             path_file_txt = param.path + folder_name + '/Data/*.txt'
             file_name_txt = glob(path_file_txt)
+            if len(file_name_txt) == 0:
+                continue
             loaded_txt = open(file_name_txt[0], "r")
             text = loaded_txt.readlines()
             line = text[2]
