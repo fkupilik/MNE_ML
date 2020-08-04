@@ -23,3 +23,9 @@ Detailed description of the whole experiment with an explanation of the code is 
 The program is executable from the command line using the _main.py_ file with one argument represents the choice of classifier. The command has the following form:
 
 `python main.py <classifier>`
+
+The user can choose from 4 types of classifiers, so the possible variants of the command are:
+-`python main.py lda`
+-`python main.py svm`
+-`python main.py cnn`
+-`python main.py rnn`
