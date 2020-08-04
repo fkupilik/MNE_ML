@@ -18,3 +18,8 @@ The used dataset in the `BrainVision` format, which is located in the _PROJECT_D
 - Support vector machines
 
 Detailed description of the whole experiment with an explanation of the code is located in the [Wiki](https://github.com/fkupilik/MNE_ML/wiki).
+
+## Run:
+The program is executable from the command line using the _main.py_ file with one argument represents the choice of classifier. The command has the following form:
+
+`python main.py <classifier>`
