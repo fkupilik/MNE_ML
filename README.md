@@ -15,6 +15,8 @@ The user can choose from 4 types of classifiers, so the possible variants of the
 - `python main.py cnn`
 - `python main.py rnn`
 
+All other parameters are configurable in the _param.py_ file. The solution is implemented in Python in version 3.6.9 and the versions of the used libraries can be found in the _requirements.txt_ file.
+
 ## Used preprocessing methods:
 - low-pass and high-pass filtering
 - epoch extraction
