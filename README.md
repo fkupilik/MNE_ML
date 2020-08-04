@@ -4,6 +4,17 @@ This is the example of the experiment using preprocessing methods from the `MNE`
 
 The used dataset in the `BrainVision` format, which is located in the _PROJECT_DAYS_P3_NUMBERS_ folder, is described in this [article](https://www.nature.com/articles/sdata2016121)
 
+## Run:
+The program is executable from the command line using the _main.py_ file with one argument represents the choice of classifier. The command has the following form:
+
+`python main.py <classifier>`
+
+The user can choose from 4 types of classifiers, so the possible variants of the command are:
+- `python main.py lda`
+- `python main.py svm`
+- `python main.py cnn`
+- `python main.py rnn`
+
 ## Used preprocessing methods:
 - low-pass and high-pass filtering
 - epoch extraction
@@ -18,14 +29,3 @@ The used dataset in the `BrainVision` format, which is located in the _PROJECT_D
 - Support vector machines
 
 Detailed description of the whole experiment with an explanation of the code is located in the [Wiki](https://github.com/fkupilik/MNE_ML/wiki).
-
-## Run:
-The program is executable from the command line using the _main.py_ file with one argument represents the choice of classifier. The command has the following form:
-
-`python main.py <classifier>`
-
-The user can choose from 4 types of classifiers, so the possible variants of the command are:
-- `python main.py lda`
-- `python main.py svm`
-- `python main.py cnn`
-- `python main.py rnn`
