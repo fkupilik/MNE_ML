@@ -25,7 +25,7 @@ The program is executable from the command line using the _main.py_ file with on
 `python main.py <classifier>`
 
 The user can choose from 4 types of classifiers, so the possible variants of the command are:
--`python main.py lda`
--`python main.py svm`
--`python main.py cnn`
--`python main.py rnn`
+- `python main.py lda`
+- `python main.py svm`
+- `python main.py cnn`
+- `python main.py rnn`
