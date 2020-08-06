@@ -12,8 +12,17 @@ from nn import NN
 
 
 class CNN(NN):
+    """
+    Class for the convolutional network initialization
+    """
 
     def __init__(self, channels, time_samples, param):
+        """
+        Initializes the convolutional neural network
+        :param channels: number of the channels
+        :param time_samples: number of the time samples
+        :param param: configuration object
+        """
         self.model = Sequential()
         self.model.add(Conv2D(6, (3, 3), activation='elu', input_shape=(channels, time_samples, 1)))
         self.model.add(BatchNormalization())

@@ -17,6 +17,12 @@ from param import Param
 
 
 def windowed_means(out_features, param):
+    """
+    Windowed means features extraction method
+    :param out_features: epoched data in 3D shape (epochs_count x channels_count x values_count)
+    :param param: configuration object
+    :return: 2D vector with calculated features (epochs_count x features_count)
+    """
     sampling_fq = param.t_max * 1000 + 1
     temp_wnd = np.linspace(param.min_latency, param.max_latency, param.steps + 1)
     intervals = np.zeros((param.steps, 2))
@@ -42,6 +48,22 @@ def print_help():
     print("You can choose from these classifiers: lda, svm, cnn, rnn\n")
 
 
+"""
+The program is executable from the command line using this file with one argument represents the choice of classifier. 
+The command has the following form:
+
+python main.py <classifier>
+
+The user can choose from 4 types of classifiers, so the possible variants of the command are:
+
+python main.py lda
+python main.py svm
+python main.py cnn
+python main.py rnn
+
+All other parameters are configurable in the param.py file.
+"""
+
 if len(sys.argv) != 2:
     print("The wrong number of command line arguments!\n")
     print_help()
@@ -53,7 +75,6 @@ if classifier != 'cnn' and classifier != 'rnn' and classifier != 'lda' and class
     print("The wrong choice of classifier!\n")
     print_help()
     exit(1)
-  # choose from 'svm', 'lda', 'cnn', 'rnn'
 
 param = Param()
 
@@ -72,8 +93,12 @@ val = round(param.validation_part * x_train.shape[0])
 shuffle_split = ShuffleSplit(n_splits=param.cross_val_iter, test_size=val, random_state=0)
 val_results = []
 test_results = []
+iter_counter = 0
 
+# Monte-carlo cross-validation
 for train, validation in shuffle_split.split(x_train):
+    iter_counter = iter_counter + 1
+    print(iter_counter, "/", param.cross_val_iter, " cross-validation iteration")
 
     if classifier == 'cnn':
         model = cnn.CNN(x_train.shape[1], x_train.shape[2], param)

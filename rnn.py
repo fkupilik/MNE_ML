@@ -7,8 +7,17 @@ from nn import NN
 
 
 class RNN(NN):
+    """
+    Class for the LSTM neural network initialization
+    """
 
     def __init__(self, channels, time_samples, param):
+        """
+        Initializes the LSTM neural network
+        :param channels: number of the channels
+        :param time_samples: number of the time samples
+        :param param: configuration object
+        """
         dropout = .25
         self.model = Sequential()
         self.model.add(LSTM(input_shape=(channels, time_samples), units=100, return_sequences=True, activation='relu'))
